@@ -3,7 +3,7 @@ var database = firebase.database();
 var ticketsRef = database.ref('tickets');
 
 function setBooking() {
-    ticket_amount = document.getElementById("ticket_qauntity").nodeValue;
+    ticket_amount = document.getElementById("ticket_qauntity").value;
     var booking_fee = 10;
     if (ticket_amount < 1 || ticket_amount > 8) {
         document.getElementById("5A").innerHTML = "cant have less than 1 or more than 8 tickets*";
